@@ -1,0 +1,148 @@
+html {
+    background-color: rgb(221, 216, 196);
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: rgb(83, 81, 81);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgb(142, 130, 130);
+    border-radius: 0.5rem;
+}
+
+.main_wrapper {
+    padding: 2rem 0 0 0;
+    width: 85vw;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid rgb(165, 161, 161);
+    border-bottom: none;
+    border-top: none;
+}
+
+.all_books_wrapper {
+    border-top: 1px solid rgb(165, 161, 161);
+
+}
+
+.list_name {
+    color: rgb(63, 39, 181);
+    margin-left: 3%;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.empty_list,
+.no_book_found {
+    text-align: center;
+    padding: 1rem 0;
+    color: rgb(189, 61, 61);
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+.book_list {
+    padding: 1rem 0;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(243, 237, 215);
+}
+
+.book_list .books_wrapper {
+    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    margin-left: 1.5rem;
+}
+
+
+.book_list .books {
+    width: 8rem;
+    height: 13rem;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: rgb(180, 112, 141);
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+
+.book_list .books:hover {
+    transform: rotateY(180deg);
+}
+
+.flip_front,
+.flip_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip_back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 0.5rem;
+}
+
+.book_list .books img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+.book_list .books p {
+    background-color: rgba(3, 118, 184, 0.215);
+    font-weight: 500;
+    border-radius: 0.3rem;
+    margin-top: 2rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+
+.book_list .books p span {
+    font-weight: 400;
+    color: rgb(227, 214, 214);
+}
+
+.book_list .books_wrapper select {
+    padding: 0.3rem 0;
+    border-radius: 0.3rem;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.book_list .books_wrapper button {
+    padding: 0.3rem 0;
+    border-radius: 0.3rem;
+    width: 100%;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.book_list .books_wrapper button:hover {
+    background-color: rgb(167, 46, 24);
+}
