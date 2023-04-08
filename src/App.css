@@ -32,6 +32,10 @@ html::-webkit-scrollbar-thumb {
 
 }
 
+.already_read_wrapper {
+    border-bottom: 1px solid rgb(165, 161, 161);
+}
+
 .list_name {
     color: rgb(63, 39, 181);
     margin-left: 3%;

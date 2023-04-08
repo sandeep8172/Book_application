@@ -29,7 +29,7 @@ const AlreadyRead = () => {
     }
 
     return (
-        <div className="main_wrapper">
+        <div className="main_wrapper already_read_wrapper">
             <p className="list_name">Already Read</p>
 
             <div className="book_list">

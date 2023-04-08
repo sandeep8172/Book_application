@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import AllBooks from './components/allBooks/AllBooks';
 import Reading from './components/curruntyReading/Reading';
