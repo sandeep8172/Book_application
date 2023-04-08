@@ -19,6 +19,7 @@
 }
 
 .header_wrapper button {
+    font-size: 100%;
     color: white;
     margin-right: 1rem;
     border: none;
